@@ -3,7 +3,7 @@
 This is a simple bubble game where the player needs to click on the bubbles with the correct number to score points. The game has a timer and displays the score, hit number, and remaining time.
 
 ## How to Play
-
+link:https://spontaneous-malasada-50de15.netlify.app/
 1. Open the `index.html` file in a web browser.
 2. The game will start automatically with a 60-second timer.
 3. A random number between 0 and 9 will be displayed in the "Hit" box.
