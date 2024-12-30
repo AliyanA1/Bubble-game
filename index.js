@@ -14,14 +14,34 @@ function hitfun(){
    document.querySelector("#hit").innerHTML=hit;  
 }
 
+let screenWidth = window.innerWidth;// check the screen width
 
 function bubblefun(){
     var bubble="";
-  for (let i = 1; i < 177; i++) {
-  let rn=Math.floor(Math.random()*10)
-  bubble +=`<div class="bubble">${rn}</div>`
-   }
-
+    if(screenWidth>1000){
+        for (let i = 1; i < 177; i++) {
+            let rn=Math.floor(Math.random()*10)
+            bubble +=`<div class="bubble">${rn}</div>`
+             }
+    }
+    else if(screenWidth>800){
+        for (let i = 1; i < 121; i++) {
+            let rn=Math.floor(Math.random()*10)
+            bubble +=`<div class="bubble">${rn}</div>`
+             }
+    }
+    else if(screenWidth>600){
+        for (let i = 1; i < 78; i++) {
+            let rn=Math.floor(Math.random()*10)
+            bubble +=`<div class="bubble">${rn}</div>`
+             }
+    }
+    else{
+        for (let i = 1; i < 41; i++) {
+            let rn=Math.floor(Math.random()*10)
+            bubble +=`<div class="bubble">${rn}</div>`
+    }
+}
   document.querySelector(".downSection").innerHTML = bubble;
 }
 
