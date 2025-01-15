@@ -53,7 +53,10 @@ function letsCount(){
             document.querySelector("#timer").innerHTML=timer;
         }
         else if(timer==0){
-            document.querySelector(".downSection").innerHTML=`<h1>Your Score is: ${score}</h1>`;
+            document.querySelector(".downSection").innerHTML=`
+            <h1>Game Over!</h1>
+            <h1>Your Score is: ${score}</h1>
+            `;
         }
         else{
             clearInterval(intera);
